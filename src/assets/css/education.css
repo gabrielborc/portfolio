@@ -1,0 +1,132 @@
+.education {
+  background-color: #141414;
+}
+
+.education > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: top;
+  gap: 70px;
+  max-width: 1128px;
+  margin: auto;
+  padding: 120px 30px
+}
+
+.education h2 {
+  min-width: 5ch;
+  max-width: 6ch;
+  margin: 0;
+  font-size: 8rem;
+  font-weight: 900;
+  word-break: break-all;
+  color: #000000;
+}
+
+.education p {
+  color: #A3A3A3;
+}
+
+.education div > p {
+  font-size: 1.5rem;
+  max-width: 40ch;
+}
+
+.education strong {
+  color: #FFFFFF;
+}
+
+.education .course {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.education .course li {
+  width: 204px;
+  padding: 20px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.education .course .highlight {
+  position: relative;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+
+.education .course .highlight::after {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 25px;
+  top: 0;
+  left: -25px;
+  background-image: linear-gradient(#B6F829, #67DD0A);
+}
+
+.education article:first-of-type {
+  margin-bottom: 40px;
+}
+
+.education header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.education article h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #A3A3A3;
+}
+
+.education article li {
+  margin-left: 35px;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.education .course-intensive li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education .course-intensive li span:last-child {
+  color: #8F8F8F;
+  margin-right: 20px;
+}
+
+@media (max-width: 850px) {
+  .education > div {
+    grid-template-columns: 1fr;
+  }
+
+  .education h2 {
+    max-width: initial;
+    margin: auto;
+  }
+
+  .education div > p {
+    max-width: initial;
+    margin: auto;
+  }
+
+  .education .course {
+    justify-content: center;
+  }  
+}
+
+@media (max-width: 650px) {
+  .education h2 {
+    font-size: clamp(3rem, 10vw, 4.7rem);
+  }
+}
