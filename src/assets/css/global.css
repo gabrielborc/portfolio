@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-Regular.ttf'), url('../fonts/FiraSans-Bold.ttf'),;
+  src: url('/src/assets/fonts/FiraSans-Regular.ttf'), 
+    url('/src/assets/fonts/FiraSans-Bold.ttf'),;
 }
 
 html {
